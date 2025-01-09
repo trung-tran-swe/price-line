@@ -1,0 +1,77 @@
+{
+    "name": "priceline.trung.tran.swe",
+    "version": "0.1.0",
+    "description": "Display potential gain/loss for an option strike price.",
+    "keywords": ["price", "stock", "option"],
+    "homepage": "https://github.com/trung-tran-swe/price-line",
+    "bugs": "https://github.com/trung-tran-swe/price-line/issues",
+    "license": "MIT",
+    "author": {
+        "name": "Trung Tran",
+        "email": "trung.tran.swe@gmail.com",
+        "url": "https://github.com/trung-tran-swe"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/trung-tran-swe"
+        },
+        {
+            "type": "buy_me_a_coffee",
+            "url": "https://buymeacoffee.com/trung-tran-swe"
+        },
+        {
+            "type": "paypal",
+            "url": "https://www.paypal.com/paypalme/ttran7977"
+        }
+    ],
+    "main": "public/electron.js",
+    "repository": {
+        "type": "git",
+        "url": "github:trung-tran-swe/price-line"
+    },
+    "private": true,
+    "scripts": {
+        "start": "set BROWSER=none&& react-scripts start",
+        "build": "react-scripts build",
+        "start-electron": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
+        "electron": "concurrently \"npm start\" \"npm run start-electron\"",
+        "package": "electron-builder build --win -c.extraMetadata.main=build/main.js --publish never",
+        "publish": "electron-builder build --win --publish always"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.11.3",
+        "@emotion/styled": "^11.14.0",
+        "@mui/material": "^6.3.1",
+        "@types/react": "^19.0.3",
+        "@types/react-dom": "^19.0.2",
+        "concurrently": "^9.1.2",
+        "eslint-config-react-app": "^7.0.1",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-scripts": "^5.0.1",
+        "typescript": "^5.7.3"
+    },
+    "devDependencies": {
+        "electron": "^33.2.1",
+        "electron-builder": "^25.1.8"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }    
+}
