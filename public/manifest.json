@@ -1,0 +1,8 @@
+{
+  "short_name": "Price Line",
+  "name": "Display potential gain/loss for an option strike price",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

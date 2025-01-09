@@ -1,0 +1,4 @@
+- stock-dollar.png
+    - dollar by Dicky Prayudawanto from <a href="https://thenounproject.com/browse/icons/term/dollar/" target="_blank" title="dollar Icons">Noun Project</a> (CC BY 3.0)
+- stock.png
+    - Stock by Bana Studio from <a href="https://thenounproject.com/browse/icons/term/stock/" target="_blank" title="Stock Icons">Noun Project</a> (CC BY 3.0)
