@@ -2,7 +2,7 @@
 
 Display potential gain/loss for an option strike price.
 
-This displays the potential gain/loss in dollar and percentage for a stock option strike price vs the potential price, giving you a quick an overall situational awareness of how your option is doing.
+This displays the potential gain/loss in dollar and percentage for a stock option strike price vs the potential price, giving you a quick overall situational awareness of how your option is doing.
 You **should** have a proper stop-loss and take-profit.
 
 ![Price Line screenshot](./media/screenshot.png "Price Line screenshot")
