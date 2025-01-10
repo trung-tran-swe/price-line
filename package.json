@@ -1,9 +1,9 @@
 {
-    "name": "priceline.trung.tran.swe",
+    "name": "price-line.trung.tran.swe",
     "version": "0.1.0",
     "description": "Display potential gain/loss for an option strike price.",
     "keywords": ["price", "stock", "option"],
-    "homepage": "https://github.com/trung-tran-swe/price-line",
+    "homepage": "./",
     "bugs": "https://github.com/trung-tran-swe/price-line/issues",
     "license": "MIT",
     "author": {
@@ -35,9 +35,7 @@
         "start": "set BROWSER=none&& react-scripts start",
         "build": "react-scripts build",
         "start-electron": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
-        "electron": "concurrently \"npm start\" \"npm run start-electron\"",
-        "package": "electron-builder build --win -c.extraMetadata.main=build/main.js --publish never",
-        "publish": "electron-builder build --win --publish always"
+        "electron": "concurrently \"npm start\" \"npm run start-electron\""
     },
     "dependencies": {
         "@emotion/react": "^11.11.3",
@@ -53,8 +51,7 @@
         "typescript": "^5.7.3"
     },
     "devDependencies": {
-        "electron": "^33.2.1",
-        "electron-builder": "^25.1.8"
+        "electron": "^33.2.1"
     },
     "eslintConfig": {
         "extends": [
@@ -73,5 +70,15 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    }    
+    },
+    "build": {
+        "appId": "price-line.trung.tran.swe",
+        "files": [
+            "build/**/*",
+            "node_modules/**/*"
+        ],
+        "directories":{
+            "buildResources": "assets"
+        }
+    }
 }
